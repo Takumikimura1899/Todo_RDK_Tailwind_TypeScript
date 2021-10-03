@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { newTask } from './taskSlice';
+import TodoForm from '../../components/molecules/TodoForm';
 
 const TaskInput = () => {
   const dispatch = useDispatch();
@@ -13,15 +14,20 @@ const TaskInput = () => {
     dispatch(newTask(editContent));
   };
   return (
-    <form onSubmit={handleSubmit}>
-      <input
-        type='text'
-        value={editContent}
-        onChange={handleContentChange}
-        placeholder='TODOを入力してください'
-      />
-      <button>追加</button>
-    </form>
+    <TodoForm
+      onSubmit={handleSubmit}
+      onChange={handleContentChange}
+      value={editContent}
+    />
+    // <form onSubmit={handleSubmit}>
+    //   <input
+    //     type='text'
+    //     value={editContent}
+    //     onChange={handleContentChange}
+    //     placeholder='TODOを入力してください'
+    //   />
+    //   <button>追加</button>
+    // </form>
   );
 };
 

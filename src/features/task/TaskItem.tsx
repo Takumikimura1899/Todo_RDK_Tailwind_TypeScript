@@ -10,7 +10,7 @@ type Props = {
 const TaskItem: React.FC<Props> = ({ task }) => {
   const dispatch = useDispatch();
   return (
-    <div>
+    <div className=''>
       <input
         type='checkbox'
         onChange={() => dispatch(toggleCompleted(task))}
