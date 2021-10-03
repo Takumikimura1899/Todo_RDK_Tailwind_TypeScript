@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { newTask } from './taskSlice';
-import TodoForm from '../../components/molecules/TodoForm';
+import { newTask } from '../../features/task/taskSlice';
+import TodoForm from '../molecules/TodoForm';
 
 const TaskInput = () => {
   const dispatch = useDispatch();

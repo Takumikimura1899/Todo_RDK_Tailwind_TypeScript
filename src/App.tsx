@@ -1,7 +1,7 @@
 import React from 'react';
-import TaskList from './features/task/TaskList';
+import TaskList from './components/organisms/TaskList';
 import './App.css';
-import TaskInput from './features/task/TaskInput';
+import TaskInput from './components/organisms/TaskInput';
 import Header from './components/organisms/Header';
 import Footer from './components/organisms/Footer';
 

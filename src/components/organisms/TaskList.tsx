@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import TaskItem from '../../components/molecules/TaskItem';
-import { selectTasks, Task } from './taskSlice';
+import TaskItem from '../molecules/TaskItem';
+import { selectTasks, Task } from '../../features/task/taskSlice';
 
 const TaskList: React.FC = () => {
   const tasks = useSelector(selectTasks);
