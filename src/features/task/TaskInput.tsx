@@ -19,15 +19,6 @@ const TaskInput = () => {
       onChange={handleContentChange}
       value={editContent}
     />
-    // <form onSubmit={handleSubmit}>
-    //   <input
-    //     type='text'
-    //     value={editContent}
-    //     onChange={handleContentChange}
-    //     placeholder='TODOを入力してください'
-    //   />
-    //   <button>追加</button>
-    // </form>
   );
 };
 

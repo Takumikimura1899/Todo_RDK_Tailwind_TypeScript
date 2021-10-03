@@ -25,10 +25,6 @@ const TodoForm: React.FC<Props> = ({ onSubmit, value, onChange }) => {
               />
             </div>
             <FormButton>Button</FormButton>
-            <p className='mx-auto mt-3 text-xs text-blueGray-500'>
-              {' '}
-              Long caption text under input..
-            </p>
           </div>
         </div>
       </form>
